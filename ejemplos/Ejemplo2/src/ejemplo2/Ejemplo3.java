@@ -17,7 +17,7 @@ import java.util.Scanner;
  *
  * @author reroes
  */
-public class Ejemplo2 {
+public class Ejemplo3 {
 
     /**
      * @param args the command line arguments
@@ -26,10 +26,22 @@ public class Ejemplo2 {
         // Condicionales compuestos
         Scanner entrada = new Scanner(System.in);
         entrada.useLocale(Locale.US); // 10,2 / 10.2
+        double nota1;
+        double nota2;
+        double suma;
         double promedio;
-        System.out.println("Ingrese el promedio por favor");
-        promedio = entrada.nextDouble();
+        
+        System.out.println("Ingrese la Nota 1, por favor");
+        nota1 = entrada.nextDouble();
+        System.out.println("Ingrese la Nota 2, por favor");
+        nota2 = entrada.nextDouble();
+       
+        
+        suma = nota1 + nota2;
+        promedio = suma / 2; 
 
+        
+        
         if (promedio >= 7.5) {
             System.out.printf("Estudiante aprobado con un "
                     + "promedio: %.2f\n", promedio);
@@ -40,3 +52,4 @@ public class Ejemplo2 {
     }
 
 }
+
